@@ -7,14 +7,16 @@
 <html lang="en">
 	<head>
 		<title>Nomash Engineers</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
 		<link rel="stylesheet" href="https://unpkg.com/vegas/dist/vegas.min.css">
 		<script src="https://cdn.jsdelivr.net/npm/countdown@2.6.0/countdown.min.js"></script>
-
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 	</head>
 
 
@@ -22,7 +24,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
 		<!-- Sidebar -->
 			<section id="sidebar">
-				<h3>Navigation</h3>
+				<h3><img src="images/nomash_logo_with_text.svg" alt="Nomash Engineers logo with text included."></h3>
 
 				<div class="inner">
 					<nav>
@@ -32,6 +34,7 @@
 							<li><a href="#two">What We do</a></li>
 							<li><a href="#three">Events</a></li>
 							<li><a href="#four">Memberships</a></li>
+							<li><a href="#sponsors">Sponsorships</a></li>
 							<li><a href="#five">Contact us</a></li>
 						</ul>
 					</nav>
@@ -44,31 +47,33 @@
 
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
+						<div class="inner_left">
 							<h1>Nomash Engineers</h1>
 							<p>The Nomash student club that engineers for the world.</p>
 							<ul class="actions">
 								<li><a href="#one" class="button scrolly">Learn more</a></li>
 							</ul>
 						</div>
-						
+
+						<div class="inner_right">
+							<img id="biglogo" src="images/nomash_logo_notext.svg" alt="Large scale nomash engineers logo">
+						</div>
 					</section>
 
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<h2>About Us</h2>
-						<section>
-							<a href="#" class="image"><img src="images/stockimage1.jpg" alt="A UCL Mechanical Engineering student." data-position="center center" /></a>
+						<section id="lefthor">
+							<a href="#" class="image"><img src="images/grinder_use.webp" alt="A Nomash Engineers member using an angle grinder." data-position="center center" loading="lazy"></a>
 							<div class="content">
 								<div class="inner">
 									<h3>Who we are</h3>
 									<p>We are a group of passionate Nomash students, united by the love we share for solving problems and bringing solutions. Our club brings together students from all faculties, who share a love for engineering.</p>
-				
 								</div>
 							</div>
 						</section>
-						<section>
-							\
+						<section id="righthor">
+							
 							<div class="content">
 								<div class="inner">
 									<h3>Our goal</h3>
@@ -76,10 +81,10 @@
 									
 								</div>
 							</div>
-							<a href="#" class="image"><img src="images/stockimage2.jpg" alt="Southern Arkansas University engineering students" data-position="top center" /></a>
+							<a href="#" class="image"><img src="images/collabfellas.webp" alt="Students of the Nomash Engineers collaborating at a meeting." data-position="top center"></a>
 						</section>
-						<section>
-							<a href="#" class="image"><img src="images/stockimage3.jpg" alt="Engineering Science Students" data-position="25% 25%" /></a>
+						<!-- <section id="lefthor">
+							<a href="#" class="image"><img src="images/stockimage3.webp" alt="Engineering Science Students" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
 									<h3>How we started</h3>
@@ -87,7 +92,7 @@
 									
 								</div>
 							</div>
-						</section>
+						</section> -->
 					</section>
 
 					
@@ -106,7 +111,7 @@
 								<section>
 									<span class="icon solid major fa-lock"></span>
 									<h3>Collaboration</h3>
-									<p>We host collabs with other clubs, other unis and other companies all the time.</p>
+									<p>We host collaborations with other clubs, other unis and other companies all the time.</p>
 								</section>
 								<section id="newsletter">
 									<span class="icon solid major fa-cog"></span>
@@ -115,7 +120,7 @@
 								</section>
 							</div>
 							<ul class="actions">
-								<li><input type="text" name="email" id="emailnewsl" class="textbox" placeholder="Enter your email address"/></li>
+								<li><input type="text" name="email" id="emailnewsl" class="textbox" placeholder="Enter your email address"></li>
 								<li><a id="NewsletterButton" class="button">Sign Up for Newsletter</a></li>
 							</ul>
 						</div>
@@ -124,39 +129,42 @@
 
 				<!-- CUSTOM 1 -->
 					<section id="three" class="wrapper style2 spotlights">
-						<!--<h2>Events</h2>-->
+						<h2>Events</h2>
 						<section>
 							<div class="content">
 								<div class="inner">
-									<h3>Weekly Nomash Engineering Meetings</h3>
-									<p>Every Monday at 6PM we hold meetings in the Flan Ainkel building, tag along for weekly updates and fun games!</p>
-									<span id="countdown-meet"></span>
+									<h3>Nomash Engineering Seasonal Club Meetings</h3>
+									<p>Join us for our next meeting, where we will discuss the ins and outs of our current projects and host fun games!</p>
+									<p><b>Location: </b>Room 3.12 Flan Ainkel Building, Nomash University, Atlantis</p>
+									<p><b>Time Until: </b><span id="countdown-meet"></span></p>
 								</div>
 								
 							</div>
-							<a href="#" class="image"><img src="images/meetingimage01.jpg" alt="A UCL Mechanical Engineering student." data-position="center center" /></a>
+							<a href="#" class="image"><img src="images/meetingimage01.webp" alt="A group of studnets attending a previous seasonal meeting." data-position="center center"></a>
 						</section>
 						<section>
 							<div class="content">
 								<div class="inner">
-									<h3>University Barbeque - Friday 29<sup><small>th</small></sup> May</h3>
-									<p>Our team Barbeque will be held on the Grapefruit Scented Lawns, show your membership ID for a free Sausage!</p>
-									<span id="countdown-bbq"></span>
+									<h3>University Barbeque - Friday 29<sup><small>th</small></sup> July</h3>
+									<p>Our team Barbeque will be held on the Grapefruit Scented Lawns, show your membership ID for a free Sausage.</p>
+									<p><b>Location: </b>Grapefruit Scented Lawns, Nomash University, Atlantis</p>
+									<p><b>Time Until: </b><span id="countdown-bbq"></span></p>
 								</div>
 							</div>
-							<a href="#" class="image"><img src="images/GeminiBBQ01.png" alt="A UCL Mechanical Engineering student." data-position="center center" /></a>
+							<a href="#" class="image"><img src="images/GeminiBBQ01.webp" alt="A group of members attending our most recent barbeque event." data-position="center center"></a>
 
 						</section>
 						<section>
 							
 							<div class="content">
 								<div class="inner">
-									<h3>University Lego Car Race - Tuesday 2<sup><small>nd</small></sup> June</h3>
+									<h3>University Lego Car Race - Tuesday 2<sup><small>nd</small></sup> July</h3>
 									<p>Our teams taking part in the Lego Car Race, please enquire for details to get involved, or come down and support!</p>
-									<span id="countdown-lego"></span>
+									<p><b>Location: </b>Gilbert Park Racecourse, Melbourne</p>
+									<p><b>Time Until: </b><span id="countdown-lego"></span></p>
 								</div>
 							</div>
-							<a href="#" class="image"><img src="images/GemeniLegoCar.png" alt="A UCL Mechanical Engineering student." data-position="center center" /></a>
+							<a  href="#" class="image"><img src="images/GemeniLegoCar.webp" alt="Fictional image of Lego cars racing" data-position="center center"></a>
 
 						</section>
 					</section>
@@ -166,17 +174,17 @@
 					<section id="four" class="wrapper style3 fade-up">
 						<div class="inner">
 							<h2>Join us</h2>
-							<p>Want to get in on the Action? Read below to figure out how you can ger involved!</p>
+							<p>Want to get in on the Action? Read below to figure out how you can get involved!</p>
 							<div class="features">
 								<section>
 									<span class="icon solid major fa-code"></span>
 									<h3>Where we are</h3>
-									<p>The Nomash Engineers have an office located in Building 12 on the Clayton campus. Pop in to help register or come by and say hello!</p>
+									<p>The Nomash Engineers have an office located in Building 12 on the Atlantis campus. Pop in to help register or come by and say hello!</p>
 								</section>
 								<section>
 									<span class="icon solid major fa-lock"></span>
 									<h3>How to join</h3>
-									<p>You can join from the link below, or by coming in person.</p>
+									<p>You can join by registering your email below, or by coming in person.</p>
 								</section>
 								<section>
 									<span class="icon solid major fa-cog"></span>
@@ -186,17 +194,41 @@
 								<section>
 									<span class="icon solid major fa-desktop"></span>
 									<h3>Free Trial</h3>
-									<p>We offer a week free trial for you to attend our events and test out the benefits!</p>
+									<p>We offer a week free trial for you to attend our events and test out the benefits! (in person only)</p>
 								</section>
 							</div>
 							<ul class="actions">
-								<li><input type="text" name="email" id="emailjoin" class="textbox" placeholder="Enter your email address"/></li>
+								<li><input type="text" name="email" id="emailjoin" class="textbox" placeholder="Enter your email address"></li>
 								<li><a id = "joinbutton" class="button">Join Here</a></li>
 							</ul>
 						</div>
 					</section>
 					
 
+
+				<!-- sponsors -->
+				 <section id="sponsors" class="wrapper style2 spotlights">
+					<div class=inner>
+					<h2>Our Sponsors</h2>
+					<p>We are incredibly grateful to all of our valued sponsors. If you are interested in sponsoring please contact us <a href="#five">here.</a></p>
+					</div>
+						<ul class="sponsorlogos">
+							<li><img src="images/forj.svg" alt="FORJ Logo, one of our tech sponsors.">
+							<p>- One of our tech sponsors</p></li>
+							<li><img src="images/axon-dynamics.svg" alt="AXON Logo, one of our tech sponsors.">
+							<p>- One of our tech sponsors</p></li>
+							<li><img src="images/krato.svg" alt="KRATO Logo, one of our data sponsors.">
+							<p>- One of our data sponsors</p></li>
+							<li><img src="images/luminos.svg" alt="LUMINOS Logo, one of our equiptment sponsors.">
+							<p>- One of our equiptment sponsors</p></li>
+							<li><img src="images/verda.svg" alt="VERDA Logo, one of our tech sponsors.">
+							<p>- One of our tech sponsors</p></li>
+							<li><img src="images/orbitex.svg" alt="ORBITEX Logo, one of our data sponsors.">
+							<p>- One of our data sponsors</p></li>
+						</ul>
+							
+						</section>
+					
 
 				<!-- Three -->
 					<section id="five" class="wrapper style1 fade-up">
@@ -210,11 +242,11 @@
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
+												<input type="text" name="name" id="name">
 											</div>
 											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="emailmessage" />
+												<label for="emailmessage">Email</label>
+												<input type="text" name="email" id="emailmessage">
 											</div>
 											<div class="field">
 												<label for="message">Message</label>
@@ -232,8 +264,8 @@
 									<ul class="contact">
 										<li>
 											<h3>Address</h3>
-											<span>Building 12 Room 1267<br />
-											Clayton, Atlantis<br />
+											<span>Building 12 Room 1267<br>
+											Clayton, Atlantis<br>
 											Australia</span>
 										</li>
 										<li>

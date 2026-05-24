@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+  <rect width="200" height="80" rx="8" fill="#1c1c1c"/>
+  <text x="100" y="46" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="900" fill="#ffffff">KRATO</text>
+  <line x1="20" y1="58" x2="180" y2="58" stroke="#e74c3c" stroke-width="3"/>
+</svg>

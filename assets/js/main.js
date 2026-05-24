@@ -194,15 +194,15 @@ var notyf = new Notyf();
 
 document.querySelector('#sendmessage').addEventListener('click', function() {
     const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('emailmessage').value.trim();
+    const emailmessage = document.getElementById('emailmessage').value.trim();
     const message = document.getElementById('message').value.trim();
 	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!name || !email || !message) {
+    if (!name || !emailmessage || !message) {
         notyf.error('Please fill in all fields before sending.');
         return;
     }
-	 if (!emailRegex.test(email)) {
+	 if (!emailRegex.test(emailmessage)) {
 	 	notyf.error('Please enter a valid email address.');
 	 	return;
 	 }
@@ -213,10 +213,10 @@ document.querySelector('#sendmessage').addEventListener('click', function() {
 
 
 document.querySelector('#joinbutton').addEventListener('click', function() {
-    const email = document.getElementById('emailjoin').value.trim();
+    const emailjoin = document.getElementById('emailjoin').value.trim();
 	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-	 if (!emailRegex.test(email)) {
+	 if (!emailRegex.test(emailjoin)) {
 	 	notyf.error('Please enter a valid email address.');
 	 	return;
 	 }
@@ -226,10 +226,10 @@ document.querySelector('#joinbutton').addEventListener('click', function() {
 });
 
 document.querySelector('#NewsletterButton').addEventListener('click', function() {
-    const email = document.getElementById('emailnewsl').value.trim();
+    const emailnewsl = document.getElementById('emailnewsl').value.trim();
 	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-	 if (!emailRegex.test(email)) {
+	 if (!emailRegex.test(emailnewsl)) {
 	 	notyf.error('Please enter a valid email address.');
 	 	return;
 	 }
@@ -242,24 +242,24 @@ document.querySelector('#NewsletterButton').addEventListener('click', function()
 countdown.setLabels(' sec| min| hr| day',' secs| mins| hrs| days');
 
 
-var bbq = countdown(new Date(2026, 4, 29), function(ts) {
-    document.getElementById('countdown-bbq').innerHTML = ts.days + ' Days, ' + ts.hours + ' Hours, ' + ' and ' + ts.minutes + ' Minutes' + ' away.';
+var bbq = countdown(new Date(2026, 6, 29, 18), function(ts) {
+    document.getElementById('countdown-bbq').innerHTML = ts.days + ' Days, ' + ts.hours + ' Hours, ' + ' and ' + ts.minutes + ' Minutes';
 }, countdown.DAYS | countdown.HOURS | countdown.MINUTES);
 
-var lego = countdown(new Date(2026, 5, 2), function(ts) {
-    document.getElementById('countdown-lego').innerHTML = ts.days + ' Days, ' + ts.hours + ' Hours, ' + ' and ' + ts.minutes + ' Minutes' + ' away.';
+var lego = countdown(new Date(2026, 6, 2, 14), function(ts) {
+    document.getElementById('countdown-lego').innerHTML = ts.days + ' Days, ' + ts.hours + ' Hours, ' + ' and ' + ts.minutes + ' Minutes';
 }, countdown.DAYS | countdown.HOURS | countdown.MINUTES);
 
-var meet = countdown(new Date(2026, 4, 25), function(ts) {
-    document.getElementById('countdown-meet').innerHTML = ts.days + ' Days, ' + ts.hours + ' Hours, ' + ' and ' + ts.minutes + ' Minutes' + ' away.';
+var meet = countdown(new Date(2026, 6, 25, 12), function(ts) {
+    document.getElementById('countdown-meet').innerHTML = ts.days + ' Days, ' + ts.hours + ' Hours, ' + ' and ' + ts.minutes + ' Minutes';
 }, countdown.DAYS | countdown.HOURS | countdown.MINUTES);
 
 $(document).ready(function() {
     $('#intro').vegas({
         slides: [
-            { src: 'images/stockimage1.jpg' },
-            { src: 'images/stockimage2.jpg' },
-            { src: 'images/stockimage3.jpg' }
+            { src: 'images/stockimage1.webp' },
+            { src: 'images/stockimage2.webp' },
+            { src: 'images/stockimage3.webp' }
         ],
 		overlay: true
     });

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+  <rect width="200" height="80" rx="8" fill="#f0f4ff" stroke="#ccccdd" stroke-width="1"/>
+  <polygon points="22,30 34,22 34,38" fill="#3a3a8c" opacity="0.7"/>
+  <text x="105" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#3a3a8c" letter-spacing="2">LUMINOS</text>
+  <text x="105" y="57" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#7a7ab0" letter-spacing="1">ENGINEERING</text>
+</svg>
